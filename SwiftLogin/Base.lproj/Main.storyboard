@@ -110,7 +110,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="signUpTapped:" destination="0hp-Rt-N05" eventType="touchUpInside" id="zEr-Cl-9cL"/>
+                                    <action selector="signUpTapped:" destination="0hp-Rt-N05" eventType="touchUpInside" id="sMt-rE-vIS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tBK-59-Pfq">
@@ -127,7 +127,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="gotoLoginTapped:" destination="0hp-Rt-N05" eventType="touchUpInside" id="Dl3-ls-aVz"/>
+                                    <action selector="go_to_login:" destination="0hp-Rt-N05" eventType="touchUpInside" id="ps0-uF-OSt"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USERNAME" textAlignment="natural" minimumFontSize="17" id="czP-Dr-rng">
@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="un2-FP-eJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938" y="-85"/>
+            <point key="canvasLocation" x="938" y="-35"/>
         </scene>
         <!--Home-->
         <scene sceneID="tne-QT-ifu">

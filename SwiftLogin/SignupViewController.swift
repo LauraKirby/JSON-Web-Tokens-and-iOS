@@ -34,18 +34,18 @@ class SignupViewController: UIViewController {
 
             let alertView:UIAlertView = UIAlertView()
             alertView.title = "Sign Up Failed!"
-            alertView.message = "Passwords doesn't Match"
+            alertView.message = "Passwords don't Match"
             alertView.delegate = self
             alertView.addButtonWithTitle("OK")
             alertView.show()
         } else {
             do {
 
-                let post:NSString = "username=\(username)&password=\(password)&c_password=\(confirm_password)"
+                let post:NSString = "username=\(username)&password=\(password)"
 
                 NSLog("PostData: %@",post);
 
-                let url:NSURL = NSURL(string: "https://dipinkrishna.com/jsonsignup.php")!
+                let url:NSURL = NSURL(string: "https://insectlk.herokuapp.com/signup")!
 
                 let postData:NSData = post.dataUsingEncoding(NSASCIIStringEncoding)!
 

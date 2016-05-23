@@ -82,7 +82,7 @@ class LoginViewController: UIViewController {
 
                         if(success == 1)
                         {
-                            NSLog("Login SUCCESS");
+                            print("Login SUCCESS");
 
                             let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
                             prefs.setObject(username, forKey: "USERNAME")

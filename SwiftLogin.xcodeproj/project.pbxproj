@@ -14,6 +14,7 @@
 		4F1960A71CEE5B5B00F10174 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1960A51CEE5B5B00F10174 /* LaunchScreen.storyboard */; };
 		4F1960AF1CEE66D700F10174 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1960AE1CEE66D700F10174 /* LoginViewController.swift */; };
 		4F1960B11CEE68BA00F10174 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1960B01CEE68BA00F10174 /* SignupViewController.swift */; };
+		4F67C5E41CF2ACB8000228C4 /* IceCreamShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67C5E31CF2ACB8000228C4 /* IceCreamShopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4F1960A81CEE5B5B00F10174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F1960AE1CEE66D700F10174 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4F1960B01CEE68BA00F10174 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		4F67C5E31CF2ACB8000228C4 /* IceCreamShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamShopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				4F19609C1CEE5B5B00F10174 /* AppDelegate.swift */,
 				4F19609E1CEE5B5B00F10174 /* ViewController.swift */,
 				4F1960A01CEE5B5B00F10174 /* Main.storyboard */,
+				4F67C5E31CF2ACB8000228C4 /* IceCreamShopViewController.swift */,
 				4F1960A31CEE5B5B00F10174 /* Assets.xcassets */,
 				4F1960A51CEE5B5B00F10174 /* LaunchScreen.storyboard */,
 				4F1960A81CEE5B5B00F10174 /* Info.plist */,
@@ -144,6 +147,7 @@
 				4F1960AF1CEE66D700F10174 /* LoginViewController.swift in Sources */,
 				4F19609F1CEE5B5B00F10174 /* ViewController.swift in Sources */,
 				4F1960B11CEE68BA00F10174 /* SignupViewController.swift in Sources */,
+				4F67C5E41CF2ACB8000228C4 /* IceCreamShopViewController.swift in Sources */,
 				4F19609D1CEE5B5B00F10174 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +298,7 @@
 				4F1960AD1CEE5B5B00F10174 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

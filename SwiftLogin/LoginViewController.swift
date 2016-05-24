@@ -19,13 +19,13 @@ class LoginViewController: UIViewController {
         let password:NSString = passwordTxt.text!
 
         if ( username.isEqualToString("") || password.isEqualToString("") ) {
+            let alertView = UIAlertController(title: "Login Problem",
+                                              message: "Please add username and password." as String, preferredStyle:.Alert)
+            let okAction = UIAlertAction(title: "Ok", style: .Default, handler: nil)
 
-            let alertView:UIAlertView = UIAlertView()
-            alertView.title = "Sign in Failed!"
-            alertView.message = "Please enter Username and Password"
-            alertView.delegate = self
-            alertView.addButtonWithTitle("OK")
-            alertView.show()
+            alertView.addAction(okAction)
+            self.presentViewController(alertView, animated: true, completion: nil)
+
         } else {
 
             do {
@@ -76,7 +76,7 @@ class LoginViewController: UIViewController {
 
                         let success:NSInteger = jsonData.valueForKey("success") as! NSInteger
 
-                        let jwt = jsonData.valueForKey("token")
+                        //let jwt = jsonData.valueForKey("token")
 
 
                         //[jsonData[@"success"] integerValue];
@@ -101,41 +101,31 @@ class LoginViewController: UIViewController {
                             } else {
                                 error_msg = "Unknown Error"
                             }
-                            let alertView:UIAlertView = UIAlertView()
-                            alertView.title = "Sign in Failed!"
-                            alertView.message = error_msg as String
-                            alertView.delegate = self
-                            alertView.addButtonWithTitle("OK")
-                            alertView.show()
+
+                            let alertView = UIAlertController(title: "Login Problem", message: error_msg as String, preferredStyle:.Alert)
+                            let okAction = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+                            alertView.addAction(okAction)
+                            self.presentViewController(alertView, animated: true, completion: nil)
 
                         }
 
                     } else {
-                        let alertView:UIAlertView = UIAlertView()
-                        alertView.title = "Sign in Failed!"
-                        alertView.message = "Connection Failed"
-                        alertView.delegate = self
-                        alertView.addButtonWithTitle("OK")
-                        alertView.show()
+                        let alertView = UIAlertController(title: "Login Problem", message: "Connection failed" as String, preferredStyle:.Alert)
+                        let okAction = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+                        alertView.addAction(okAction)
+                        self.presentViewController(alertView, animated: true, completion: nil)
                     }
                 } else {
-                    let alertView:UIAlertView = UIAlertView()
-                    alertView.title = "Sign in Failed!"
-                    alertView.message = "Connection Failure"
-                    if let error = reponseError {
-                        alertView.message = (error.localizedDescription)
-                    }
-                    alertView.delegate = self
-                    alertView.addButtonWithTitle("OK")
-                    alertView.show()
+                    let alertView = UIAlertController(title: "Login Problem", message: "Connection error." as String, preferredStyle:.Alert)
+                    let okAction = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+                    alertView.addAction(okAction)
+                    self.presentViewController(alertView, animated: true, completion: nil)
                 }
             } catch {
-                let alertView:UIAlertView = UIAlertView()
-                alertView.title = "Sign in Failed!"
-                alertView.message = "Server Error"
-                alertView.delegate = self
-                alertView.addButtonWithTitle("OK")
-                alertView.show()
+                let alertView = UIAlertController(title: "Login Problem", message: "Server error." as String, preferredStyle:.Alert)
+                let okAction = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+                alertView.addAction(okAction)
+                self.presentViewController(alertView, animated: true, completion: nil)
             }
         }
     }

@@ -15,11 +15,9 @@
 		4F1960AF1CEE66D700F10174 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1960AE1CEE66D700F10174 /* LoginViewController.swift */; };
 		4F1960B11CEE68BA00F10174 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1960B01CEE68BA00F10174 /* SignupViewController.swift */; };
 		4F67C5E41CF2ACB8000228C4 /* IceCreamShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67C5E31CF2ACB8000228C4 /* IceCreamShopViewController.swift */; };
-		AEBC9F3DF5A7DA4205E1F626 /* Pods_SwiftLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C1435D8FBD30D655A1414E /* Pods_SwiftLogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24086B18C69DE006FE9D0F04 /* Pods-SwiftLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLogin/Pods-SwiftLogin.release.xcconfig"; sourceTree = "<group>"; };
 		4F1960991CEE5B5B00F10174 /* SwiftLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F19609C1CEE5B5B00F10174 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F19609E1CEE5B5B00F10174 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,8 +28,6 @@
 		4F1960AE1CEE66D700F10174 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4F1960B01CEE68BA00F10174 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		4F67C5E31CF2ACB8000228C4 /* IceCreamShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCreamShopViewController.swift; sourceTree = "<group>"; };
-		75682DAEB179A98A75D8F395 /* Pods-SwiftLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLogin/Pods-SwiftLogin.debug.xcconfig"; sourceTree = "<group>"; };
-		A8C1435D8FBD30D655A1414E /* Pods_SwiftLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEBC9F3DF5A7DA4205E1F626 /* Pods_SwiftLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +46,6 @@
 			children = (
 				4F19609B1CEE5B5B00F10174 /* SwiftLogin */,
 				4F19609A1CEE5B5B00F10174 /* Products */,
-				8E4AD5638C453618E81101F3 /* Pods */,
-				8C92A8B0583C5165E3FFE1B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,23 +73,6 @@
 			path = SwiftLogin;
 			sourceTree = "<group>";
 		};
-		8C92A8B0583C5165E3FFE1B3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A8C1435D8FBD30D655A1414E /* Pods_SwiftLogin.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8E4AD5638C453618E81101F3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				75682DAEB179A98A75D8F395 /* Pods-SwiftLogin.debug.xcconfig */,
-				24086B18C69DE006FE9D0F04 /* Pods-SwiftLogin.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,12 +80,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F1960AB1CEE5B5B00F10174 /* Build configuration list for PBXNativeTarget "SwiftLogin" */;
 			buildPhases = (
-				9D5E12C0175A6989C7261684 /* 📦 Check Pods Manifest.lock */,
 				4F1960951CEE5B5B00F10174 /* Sources */,
 				4F1960961CEE5B5B00F10174 /* Frameworks */,
 				4F1960971CEE5B5B00F10174 /* Resources */,
-				2DCD403B29AA7C5DD5AEA722 /* 📦 Embed Pods Frameworks */,
-				B2FD1AD39BB6C65E14C771C6 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,54 +138,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2DCD403B29AA7C5DD5AEA722 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLogin/Pods-SwiftLogin-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9D5E12C0175A6989C7261684 /* 📦 Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		B2FD1AD39BB6C65E14C771C6 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLogin/Pods-SwiftLogin-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F1960951CEE5B5B00F10174 /* Sources */ = {
@@ -334,9 +259,12 @@
 		};
 		4F1960AC1CEE5B5B00F10174 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75682DAEB179A98A75D8F395 /* Pods-SwiftLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SimpleKeychain",
+				);
 				INFOPLIST_FILE = SwiftLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.laurakirby.SwiftLogin;
@@ -346,9 +274,12 @@
 		};
 		4F1960AD1CEE5B5B00F10174 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24086B18C69DE006FE9D0F04 /* Pods-SwiftLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/SimpleKeychain",
+				);
 				INFOPLIST_FILE = SwiftLogin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.laurakirby.SwiftLogin;

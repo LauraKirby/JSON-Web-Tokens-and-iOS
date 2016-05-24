@@ -76,6 +76,9 @@ class LoginViewController: UIViewController {
 
                         let success:NSInteger = jsonData.valueForKey("success") as! NSInteger
 
+                        let jwt = jsonData.valueForKey("token")
+
+
                         //[jsonData[@"success"] integerValue];
 
                         NSLog("Success: %ld", success);
